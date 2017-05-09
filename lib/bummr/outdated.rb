@@ -14,7 +14,7 @@ module Bummr
             puts line
             gem = parse_gem_from(line)
 
-            if gem && gemfile_contains(gem[:name])
+            if gem
               results.push gem
             end
           end
